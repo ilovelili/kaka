@@ -1,0 +1,30 @@
+<html>
+
+<head>
+  <title>iRock ‐ The Virtual Pet Rock</title>
+  <script type="text/javascript">
+
+    function touchRock() {
+      // step1. 对话框
+      var userName = prompt("What is your name?", "Enter your name here.");
+
+      // step2. 输入内容以后，alert显示
+      if (userName) {
+        alert("It is good to meet you, " + userName + ".");
+
+        // step3. 变换图片
+        document.getElementById("rockImg").src = "https://avatars3.githubusercontent.com/u/1956612?s=460&u=a8006bdfe490cac7561b027b485f6907b3c82aa6&v=4";
+      }
+    }
+
+  </script>
+</head>
+
+<body onload="alert('Hello, I am your pet rock.')">
+  <div style=" margin-top:100px; text-align:center">
+    <img id="rockImg" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+      alt="iRock" style="cursor:pointer" onclick="touchRock()" />
+  </div>
+</body>
+
+</html>
